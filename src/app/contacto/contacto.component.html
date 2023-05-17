@@ -1,0 +1,66 @@
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navStatic">
+
+        <div class="divItemNav margin5">
+            <a class="navbar-brand row" href=""><label class="tituloZaio"><b>Zaiotec</b></label><span
+                    class="subtituEslogan">Soluciones tecnológicas que transformarán digitalmente tu empresa
+                </span></a>
+        </div>
+        <button (click)="isCollapsed = !isCollapsed" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse divItemNav" id="navbarNav" [ngbCollapse]="isCollapsed">
+            <ul class="navbar-nav ulMenu" id="ulMenu">
+                <li class="nav-item active liItem" id="liMenu">
+                    <a class="nav-link" href="/Empresa">Empresa </a>
+                </li>
+                <li class="nav-item liItem" id="liMenu">
+                    <a class="nav-link" href="/Productos">Productos</a>
+                </li>
+
+                <li class="nav-item liItem" id="liMenu">
+                    <a class="nav-link" href="/Contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</div>
+
+<div class="divContenedorContacto">
+
+    <div class="divForm">
+        <h2 class="tituloContacto">Contacto</h2>
+
+        <label>
+            Nombre:
+        </label>
+        <input class="inputNormal">
+
+        <label>
+            Correo electrónico:
+        </label>
+        <input class="inputNormal">
+
+        <label>
+            Asunto
+        </label>
+        <input class="inputNormal">
+
+        <label>
+            Correo electrónico:
+        </label>
+        <textarea rows="8"></textarea>
+
+        <br>
+        <button class="buttonEnviar">Enviar</button>
+
+
+    </div>
+
+
+
+    <app-banner-footer></app-banner-footer>
+
+</div>

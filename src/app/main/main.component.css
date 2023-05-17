@@ -1,0 +1,238 @@
+.divContenedorPrincipal{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+
+/******MENU*****/
+
+
+.navStatic{
+    position: fixed; /* Set the navbar to fixed position */
+    max-width: 100vw;
+    min-width: 100vw;
+    z-index: 100;
+    margin-top: -82px !important;
+
+}
+
+.divItemNav{
+    min-width: 50%;
+    max-width: 50%;
+}
+
+.margin5{
+    padding-left: 5%;
+}
+
+#ulMenu{
+    margin-left: 20%;
+    min-width: 80%;
+    max-width: 80%;
+}
+#liMenu{
+    min-width: 33%;
+    max-width: 33%;
+
+}
+
+
+.tituloZaio{
+    font-size: 1.5vw;
+    min-width: 100%;
+    color: #1e7ba6;
+
+}
+
+.brTitulo{
+    line-height: 90% !important;
+}
+
+.subtituEslogan{
+    font-size: 1vw;
+    color: #1e7ba6;
+}
+
+
+.itemCurrent{
+    color:#269bd1;
+}
+
+.itemHover{
+    color: #2db1bd;
+}
+/******MENU*****/
+
+.divContenedorPrincipal{
+    margin-top: 82px;
+    overflow-x: hidden;
+}
+
+
+/**IMG zaio banner**/
+.imgBanner{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+
+/***divAliado****/
+
+.divAliado{
+    text-align: center;
+}
+
+
+.tituloAliado{
+    color: #269bd1;
+}
+
+.parrafoAliado{
+    margin-left: 22%;
+    max-width:56%;
+    text-align: justify;
+}
+
+
+.divRow{
+    margin-left: 10%;
+    max-width:80%;
+}
+
+
+.divItem4{
+    max-width: 25%;
+    min-width: 25%;
+}
+
+
+.imgItem{
+    min-width: 90%;
+    max-width: 90%;
+}
+
+
+.tituloItem{
+    color :#107193;
+text-align: center;
+}
+
+
+
+.ulItem{
+    text-align: left;
+    line-height: 1x.6;
+}
+
+/****fin aliado div***/
+/****desarrollo de***/
+
+
+.divDesarrollo{
+    text-align: center;
+}
+
+
+.divItem3{
+    max-width: 33%;
+    min-width: 33%;
+}
+
+
+
+.divItem2{
+    margin-left: 16.6%;
+    max-width: 25%;
+    min-width: 25%;
+}
+
+.divPreguntas{
+    min-width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+
+.pregunta1{
+    color: #107193;
+}
+.pregunta2{
+    color: #1aabc1
+}
+
+.pregunta3{
+    color: #269bd1;
+}
+
+
+@media (max-width: 770px) {
+    body{
+        margin-top: -150px;
+    }
+    .navStatic{
+        position: fixed; /* Set the navbar to fixed position */
+        max-width: 100vw;
+        min-width: 100vw;
+        z-index: 100;
+        margin-top: -56px !important;
+        margin-bottom: 0% !important;
+    
+    }
+    .divContenedorPrincipal{
+        margin-top: 56px;
+        overflow-x: hidden;
+    }
+    
+    .tituloAliado{
+        color: #269bd1;
+        font-size: 6vw !important; 
+    }
+    
+    .parrafoAliado{
+        margin-left: 5%;
+        max-width:90%;
+        text-align: justify;
+        font-size: 4vw !important;
+    }
+
+    .tituloZaio{
+        font-size: 4vw;
+        min-width: 100%;
+        color: #1e7ba6;
+    
+    }
+    .subtituEslogan{
+        min-width: 80%;
+        max-width: 80%;
+        font-size: 2vw;
+        color: #1e7ba6;
+    }
+    
+
+    .divItem4{
+        max-width: 50%;
+        min-width: 50%;
+    }
+
+    .tituloItem{
+        color :#107193;
+    text-align: center;
+    font-size: 5vw;
+    }
+    .ulItem{
+        text-align: left;
+        line-height: 1x.6;
+    }
+
+    .divRow{
+        margin-left: 5%;
+        max-width:90%;
+    }
+
+    .divItem2{
+        margin-left: 0%;
+        max-width: 50%;
+        min-width: 50%;
+    }
+
+
+}
