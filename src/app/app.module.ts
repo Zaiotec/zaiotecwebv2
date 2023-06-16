@@ -12,24 +12,29 @@ import { ContactoComponent } from './contacto/contacto.component';
 import {NgbPaginationModule, NgbAlertModule} from '@ng-bootstrap/ng-bootstrap';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { LoginComponent } from './login/login.component';
-
+import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from'@angular/common/http';
+import { RegistroComponent } from './registro/registro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    
     MainComponent,
     NosotrosComponent,
     BannerFooterComponent,
     ProductosComponent,
     ContactoComponent,
-    LoginComponent
+    LoginComponent,
+    RegistroComponent
+    
   ],
   imports: [
     
     [NgbPaginationModule, NgbAlertModule], NgbModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

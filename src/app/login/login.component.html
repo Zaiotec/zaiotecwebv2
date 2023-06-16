@@ -1,5 +1,62 @@
-<div class="divCOntenedorLogin">
-<!--template fomulario-->
-hola desde login
+
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navStatic">
+
+        <div class="divItemNav margin5">
+            <a class="navbar-brand row" href=""><label class="tituloZaio"><b>Zaiotec</b></label><span
+                    class="subtituEslogan">Soluciones tecnológicas que transformarán digitalmente tu empresa
+                </span></a>
+        </div>
+        <button (click)="isCollapsed = !isCollapsed" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse divItemNav" id="navbarNav" [ngbCollapse]="isCollapsed">
+            <ul class="navbar-nav ulMenu" id="ulMenu">
+                <li class="nav-item active liItem" id="liMenu">
+                    <a class="nav-link" href="/Empresa">Empresa </a>
+                </li>
+                <li class="nav-item liItem" id="liMenu">
+                    <a class="nav-link" href="/Productos">Productos</a>
+                </li>
+
+                <li class="nav-item liItem" id="liMenu">
+                    <a class="nav-link" href="/Contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 </div>
+
+<!--template fomulario-->
+
+
+
+
+
+
+    <div id="central">
+
+       
+        <div id="login">
+            <div class="titulo">
+                Bienvenido
+            </div>
+            <form id="loginform">
+                <input [(ngModel)]="userLogin.usuario" name= "usuario" placeholder="Usuario" required>
+                <input [(ngModel)]="userLogin.pass" type="password" name="pass " placeholder="Contraseña" required>           
+                <button  (click)="login()" type="submit" title="Ingresar" name="Ingresar">Login</button>
+            </form>
+            <div class="pie-form">
+                <a href="#">¿Olviste tu contraseña?</a>
+                <a href="/Registro">¿No tienes Cuenta? Registrate</a>
+            </div>
+        </div>
+          <div class="inferior">
+            <a href="#">Volver</a>
+        </div>
+        <div *ngIf="true">{{Muestra  }}</div>
+    </div>
+
+    
