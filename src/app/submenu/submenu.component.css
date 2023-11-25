@@ -1,0 +1,45 @@
+
+ /******MENU*****/
+ .barra{
+
+    min-width: 20%;
+    max-width: 20%; 
+
+}
+
+.imgLogoFotter{
+    margin-top: 3.5%;
+    margin-left: 1%;
+    min-width: 5%;
+    max-width: 5%;
+}
+
+.navStatic{
+    position: absolute; /* Set the navbar to fixed position */
+    max-width: 100vw;
+    min-width: 100vw;
+    min-height: 5vh;
+    max-height: 5vh;
+    
+
+
+}
+
+.divItemNav{
+    font-size: 1vw;
+    min-width: 10%;
+    max-width: 10%;
+}
+
+.margin5{
+    min-height: 10%;
+    min-width: 60%;
+    max-width: 60%;
+    padding-left: .5%;
+    margin-top: -2.3%;
+}
+
+
+
+
+/*Fin Menu*/

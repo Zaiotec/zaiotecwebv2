@@ -1,0 +1,70 @@
+<div style="background-color: aqua !important;">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navStatic">
+
+        <div class="divItemNav margin5">
+            <a class="navbar-brand row" href=""><label class="tituloZaio"><b></b></label>
+                <img class="imgLogoFotter" src="../../assets/images/Zaiotec(1).png">
+              
+                </a>    
+        </div>
+        <button (click)="isCollapsed = !isCollapsed" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse divItemNav" id="navbarNav" [ngbCollapse]="isCollapsed">
+            <ul class="navbar-nav ulMenu" id="ulMenu">
+                <li class="nav-item active liItem" id="liMenu">
+                    <a class="navlink" href="/Empresa" style="text-decoration:none">Empresa </a>
+                </li>
+                <li class="nav-item liItem" id="liMenu">
+                    <a class="navlink"  href="/Productos" style="text-decoration:none">Soluciones IoT</a>
+                </li>
+
+                <li class="nav-item liItem" id="liMenu">
+                    <a class="navlink1" href="" style="text-decoration:none">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</div>
+ 
+
+<div class="divContenedorContacto">
+
+    <div class="divForm">
+        <h2 class="tituloContacto">Contacto</h2>
+
+        <label class="T">
+            Nombre: 
+        </label>
+        <input class="inputNormal"  [(ngModel)]="jsonContacto.nombreContacto">
+
+        <label class="T">
+            Correo electrónico:
+        </label>
+        <input class="inputNormal" [(ngModel)]="jsonContacto.correoContacto">
+
+        <label class="T">
+            Asunto
+        </label>
+        <input class="inputNormal" [(ngModel)]="jsonContacto.asuntoContacto">
+
+        <label class="T">
+            Mensaje:
+        </label>
+        <textarea rows="8" [(ngModel)]="jsonContacto.mensajeContacto"></textarea>
+
+        <br>
+        <br>
+        <button class="buttonEnviar">Enviar</button>
+
+
+    </div>
+
+
+
+    <app-banner-footer></app-banner-footer>
+
+</div>

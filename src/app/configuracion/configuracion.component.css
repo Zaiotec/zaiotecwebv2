@@ -1,0 +1,82 @@
+
+
+.T{
+    text-align: left;
+  }
+
+
+table {
+
+    width: 100%;
+    font-size: 1vw;
+    table-layout: fixed;
+    border-collapse: collapse;
+    
+    
+}
+
+
+th {
+
+    text-align: left;
+    max-width:  -5vw;
+    height: 3.2vw;
+   
+    text-transform: uppercase;
+}
+tr{
+    height: 2 px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+td {
+    padding: 1.3vw;
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+
+
+tbody tr {
+    cursor: pointer;
+    height: 1%;
+    width: 100%;
+}
+
+
+
+.tabla {
+    margin-left: 5%;
+    border: hsl(197, 8%, 83%) 1px solid;
+    margin-top: 3%;
+    border-radius: 3%;
+    padding: 1%;
+    height: 36%;
+    width: 80%;
+    padding-top: 1%;
+    padding-left: 1%;
+    position: absolute;
+    float: left;
+   
+
+  
+}
+.Edit{
+    
+    margin-left: 95%;
+}
+
+.tablaCont {
+    margin-left: 5%;
+    border: hsl(197, 8%, 83%) 1px solid;
+    margin-top: 21%;
+    border-radius: 3%;
+    padding: 1%;
+    height: 17%;
+    width: 80%;
+    padding-top: 1%;
+    padding-left: 1%;
+    position: absolute;
+    float: left;
+  
+}

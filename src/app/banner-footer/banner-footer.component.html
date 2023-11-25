@@ -1,0 +1,67 @@
+
+<div class="divFooter row">
+    <div class="divItemFooter5">
+        <img class="imgLogoFotter" src="../../assets/images/zls.png">
+        <br>
+  
+ 
+    </div>
+
+    <div class="divItemFooter5">
+        <label class=labelTituloFooter><b>Soluciones</b></label>
+        <label class="labelOpcionFooter">Tecnológicas</label>
+        <label class="labelOpcionFooter">Localización y monitoreo</label>
+        <label class="labelOpcionFooter">Contacto</label>
+
+    </div>
+
+    <div class="divItemFooter5">
+        <label class=labelTituloFooter><b>Servicios</b></label>
+        <label class="labelOpcionFooter">Consultoría</label>
+        <label class="labelOpcionFooter">Estrategias digitales</label>
+        <label class="labelOpcionFooter">Automatización</label>
+        <label class="labelOpcionFooter">Diseños electrónicos</label>
+    </div>
+    <div class="divItemFooter5">
+        <label class=labelTituloFooter><b>Contacto</b></label>
+        <div class="labelOpcionFooter"> <img class="iconoLlamadaFooter" src="../../assets/images/call.png"><label class="labelNumeroFooter">55 7439 6878</label>  </div>
+        <div class="labelOpcionFooter"> <img class="iconoLlamadaFooter" src="../../assets/images/phone.png"><label class="labelNumeroFooter">722 326 2033</label>  </div>
+        <div class="labelOpcionFooter"> <img class="iconoLlamadaFooter" src="../../assets/images/email.png"><label class="labelNumeroFooter">contacto@zaiotec.com</label>  </div>
+
+
+       
+    </div>
+    <div class="divItemFooter5">
+       <!--  <label class=labelTituloFooter><b>Proximamente contaremos con una plataforma</b></label>-->
+     <br>
+     <br>
+     
+      <div class="row divContenedorRedes">
+        <a title="FB" href="https://www.facebook.com/Zaiotec-110133584234644"> <img  class="iconosRedes" src="../../assets/images/facebookR.png"></a>
+      <br>
+      
+        <a title="FB" href="https://www.linkedin.com/company/zaiotec">   <img class="iconosRedes" src="../../assets/images/linkedin.png"></a>
+        
+        </div>
+        <label class="avisoPrivacidadFooter" (click)="open(content)">Aviso de privacidad</label> 
+      
+        </div>
+
+
+
+</div>
+
+
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Aviso de privacidad</h4>
+      <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        <p class="paraffoJustificado">El presente aviso de privacidad se establece en cumplimiento de lo dispuesto en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.</p>
+        <p class="paraffoJustificado">Zaiotec, con domicilio en Ignacio Allende No. 321, San Pedro Totoltepec, Toluca, C.P. 50226, Estado de México, México, es responsable de recabar sus datos personales, del uso que se le dé a los mismos y de su protección. Su información personal será utilizada para proveer los servicios y productos que ha solicitado, informarle sobre cambios en los mismos y evaluar la calidad del servicio que le brindamos.</p>
+        <p class="paraffoJustificado">Para las finalidades señaladas en el presente aviso de privacidad, podemos recabar sus datos personales de distintas formas: cuando usted nos los proporciona directamente; cuando visita nuestro sitio de Internet o utiliza nuestros servicios en línea, y cuando obtenemos información a través de otras fuentes que están permitidas por la ley. Recabamos sus datos personales de forma directa cuando usted mismo nos los proporciona por diversos medios, como cuando nos contacta o nos da información con objeto de que le prestemos un servicio. Los datos que obtenemos por este medio pueden ser, entre otros: Su nombre, correo electrónico (email), país y ciudad, páginas visitadas dentro de nuestro sitio, asunto, mensaje e información para mejorar su experiencia en nuestro sitio. Usted tiene derecho de acceder, rectificar y cancelar sus datos personales, así como de oponerse al tratamiento de los mismos o revocar el consentimiento que para tal fin nos haya otorgado, a través de los procedimientos que hemos implementado.</p>
+        <p class="paraffoJustificado">La negativa para el uso de sus datos personales para estas finalidades no podrá ser un motivo para que le neguemos los servicios y productos que solicita o contrata con nosotros.</p>
+    </div>
+
+  </ng-template>

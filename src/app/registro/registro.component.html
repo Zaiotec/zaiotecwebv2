@@ -1,0 +1,112 @@
+
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navStatic">
+
+      <div class="divItemNav margin5">
+          <a class="navbar-brand row" href=""><label class="tituloZaio"><b>Zaiotec</b></label><span
+                  class="subtituEslogan">Soluciones tecnológicas que transformarán digitalmente tu empresa
+              </span></a>
+      </div>
+      <button (click)="isCollapsed = !isCollapsed" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse divItemNav" id="navbarNav" [ngbCollapse]="isCollapsed">
+          <ul class="navbar-nav ulMenu" id="ulMenu">
+              <li class="nav-item active liItem" id="liMenu">
+                  <a class="nav-link" href="/Empresa">Empresa </a>
+              </li>
+              <li class="nav-item liItem" id="liMenu">  
+                  <a class="nav-link" href="/Productos">Soluciones ZaIotec</a>
+              </li>
+
+              <li class="nav-item liItem" id="liMenu">
+                  <a class="nav-link" href="/Contacto">Contacto</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+</div>
+
+
+<div class="divContenedorRegistro">
+  <div class="divForm">
+    <b><h2 class="tituloRegistro">Registro Zaiotec</h2></b>
+    
+      <label class="label">
+        Nombre:
+    </label>
+    <input class="inputNormal" [(ngModel)]="userReg.nombre" type="text"  name="nombre"  placeholder="Ingrese su Nombre" required>
+
+    <label class="label" >
+      Apellido Paterno
+  </label>    
+    <input class="inputNormal" [(ngModel)]="userReg.apPaterno" type="text" name="apPaterno"  placeholder="Ingrese su Apellido Paterno" required>
+    
+    <label class="label">
+      Apellido Materno
+  </label>  
+    <input class="inputNormal" [(ngModel)]="userReg.apMaterno" type="text" name="apMaterno"  placeholder="Ingrese su Apellido Materno" required>
+    
+    <label class="label">
+      Pais
+  </label> 
+    <select class="inputNormal" [(ngModel)]="userReg.pais"placeholder="Seleccione su país"  type="text" name="pais" required>
+      <option [value]="pais.name"  *ngFor="let pais of countries">{{pais.name}}  </option>
+    </select>
+
+    <label class="label">
+      Ciudad
+  </label> 
+    <input class="inputNormal" [(ngModel)]="userReg.ciudad" type="text" name="ciudad "  placeholder="Ingrese su Ciudad" required>
+    
+    <label class="label">
+      Correo Electrónico
+  </label> 
+    <input class="inputNormal" [(ngModel)]="userReg.correo" type="email" name="correo"  placeholder="Ingrese su Correo" required>
+   
+    <label class="label">
+      Confirmar Correo Electrónico
+  </label>
+   <input class="inputNormal"  [(ngModel)]="userReg.correoc" type="email" name="correoc"  placeholder="Confirme su Correo" required>
+    
+   <label class="label">
+     Contraseña
+</label>
+   <input class="inputNormal" [(ngModel)]="userReg.pass" type="password" name="pass"  placeholder="Ingrese su Contraseña" required>
+   
+   <label class="label">
+    Confirmar Contraseña
+</label>
+   <input class="inputNormal" [(ngModel)]="userReg.passc" type="password" name="passc"  placeholder="Confirme su Contraseña" required>
+       
+  
+   <div class="boton">
+    <label for="btn-modal">
+   <!--   <input type="checkbox" value="1" onclick="Registrar.disabled = !this.checked" name="ch" > Estoy de acuerdo con <a>Términos y Condiciones</a> -->
+   <mat-checkbox class="example-margin"  [(ngModel)]="aceptaPolitica"></mat-checkbox> <button class="btnMod"  (click)="open(content)">Terminos y condiciones</button>
+  </label>
+</div>
+   <input class="botons" (click)="registrar()" [disabled]="!aceptaPolitica" value="Registrar">
+  
+   <p><a href="/Login" class="hiper">¿Ya tienes cuenta con nosotros?</a></p>
+   </div>
+  </div>
+
+ 
+      <ng-template #content let-c="close" let-d="dismiss">
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal-basic-title">Aviso de privacidad</h4>
+          
+        </div>  
+        <div class="modal-body">
+          <p class="paraffoJustificado">El presente aviso de privacidad se establece en cumplimiento de lo dispuesto en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.</p>
+        <p class="paraffoJustificado">Zaiotec, con domicilio en Ignacio Allende No. 321, San Pedro Totoltepec, Toluca, C.P. 50226, Estado de México, México, es responsable de recabar sus datos personales, del uso que se le dé a los mismos y de su protección. Su información personal será utilizada para proveer los servicios y productos que ha solicitado, informarle sobre cambios en los mismos y evaluar la calidad del servicio que le brindamos.</p>
+        <p class="paraffoJustificado">Para las finalidades señaladas en el presente aviso de privacidad, podemos recabar sus datos personales de distintas formas: cuando usted nos los proporciona directamente; cuando visita nuestro sitio de Internet o utiliza nuestros servicios en línea, y cuando obtenemos información a través de otras fuentes que están permitidas por la ley. Recabamos sus datos personales de forma directa cuando usted mismo nos los proporciona por diversos medios, como cuando nos contacta o nos da información con objeto de que le prestemos un servicio. Los datos que obtenemos por este medio pueden ser, entre otros: Su nombre, correo electrónico (email), país y ciudad, páginas visitadas dentro de nuestro sitio, asunto, mensaje e información para mejorar su experiencia en nuestro sitio. Usted tiene derecho de acceder, rectificar y cancelar sus datos personales, así como de oponerse al tratamiento de los mismos o revocar el consentimiento que para tal fin nos haya otorgado, a través de los procedimientos que hemos implementado.</p>
+        <p class="paraffoJustificado">La negativa para el uso de sus datos personales para estas finalidades no podrá ser un motivo para que le neguemos los servicios y productos que solicita o contrata con nosotros.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" (click)="close()">Cerrar</button>
+        </div>
+      </ng-template>
+      

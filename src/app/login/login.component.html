@@ -1,0 +1,137 @@
+<div style="background-color: aqua !important;">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navStatic">
+
+        <div class="divItemNav margin5">
+            <a class="navbar-brand row" href=""><label class="tituloZaio"><b></b></label>
+                <img class="imgLogoFotter" src="../../assets/images/Zaiotec(1).png">
+              
+                </a>    
+        </div>
+        <button (click)="isCollapsed = !isCollapsed" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse divItemNav" id="navbarNav" [ngbCollapse]="isCollapsed">
+            <ul class="navbar-nav ulMenu" id="ulMenu">
+                <li class="nav-item active liItem" id="liMenu">
+                    <a class="navlink" href="/Empresa" style="text-decoration:none">Empresa </a>
+                </li>
+                <li class="nav-item liItem" id="liMenu">
+                    <a class="navlink"  href="/Productos" style="text-decoration:none">Soluciones IoT</a>
+                </li>
+
+                <li class="nav-item liItem" id="liMenu">
+                    <a class="navlink" href="" style="text-decoration:none">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</div>
+
+<!--template fomulario-->
+
+
+  
+
+
+
+    <div id="central"> 
+
+        
+        <div id="login">
+            <div class="titulo">
+               Bienvenido 
+            </div>
+            <form id="loginform">
+                <input [(ngModel)]="userLogin.usuario" name= "usuario" placeholder="Usuario" required>
+                <input [(ngModel)]="userLogin.pass" type="password" name="pass " placeholder="Contraseña" required>           
+                <button  (click)="login()" type="submit" title="Ingresar" name="Ingresar">Login</button>
+            </form>
+            <div class="pie-form">
+                <a (click)="open(content)">¿Olviste tu contraseña?</a>
+                <a href="/Registro">¿No tienes Cuenta? Registrate</a>
+            </div>
+        </div>
+         
+    </div>
+
+<!--Modal cambiar contraseña-->
+    <ng-template #content let-c="close" let-d="dismiss">
+       <div class="Modl">
+            <div class="modal-header">
+                <b><h4 class="tituloC" id="modal-basic-title">Recupera tu cuenta</h4></b>
+                <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+            </div>
+            <div class="divRec">
+              <!--  <h2 class="tituloRC">¿Olvidaste tu contraseña?</h2>-->
+                <br> <div class="txt">
+                    Ingresa tu correo electrónico 
+
+                </div>
+            <br>
+            
+            <input  class="usr" [(ngModel)]="userLogin.usuario" placeholder="Ej. usuario@gmail.com" name= "usuario" required>
+          
+            <br>
+                <br>
+                <div class="txt">
+                  <p> Se te enviará un correo, haz click en el enlace para confirmar tu cuenta.</p>
+                    <br>
+                  <p> Si no encuentras el correo en tu bandeja de entrada revisa en Spam </p>
+                 
+                 </div>
+             <br>
+            <br>
+            <br> 
+                
+        
+        
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" >Enviar</button>
+            </div>
+        </div>    
+    </ng-template>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Modal verificación correo-->
+    <ng-template #content let-c="close" let-d="dismiss">
+        <div class="Modl">
+             <div class="modal-header">
+                 <b><h4 class="tituloC" id="modal-basic-title">Verifica tu cuenta</h4></b>
+                 <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+             </div>
+             <div class="divRec">
+                 <h2 class="tituloRC">¿Olvidaste tu contraseña?</h2>
+             <br> <div class="txt">
+                    Se enviará un correo para la verificación de tu cuenta.
+ 
+                    Revisar en spam
+                 </div>
+             <br>
+                 <input class="usr" [(ngModel)]="userLogin.usuario" placeholder="Ej. usuario@gmail.com" name= "usuario" required>
+ 
+             <br>
+             <br> 
+                 
+         
+         
+             </div>
+             <div class="modal-footer">
+                 <button type="button" class="btn" >Enviar</button>
+             </div>
+         </div>    
+     </ng-template>
+    

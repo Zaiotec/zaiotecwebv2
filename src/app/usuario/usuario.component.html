@@ -1,0 +1,212 @@
+
+<div style="position: fixed;"><app-menu></app-menu></div>
+  <br>
+  <br>
+  <br> 
+<mat-tab-group>
+    <mat-tab  label="Información">     
+      <div class="divContenedorCont">
+        <div class="divForm">
+          <h3 class="titulo">Información</h3>
+          
+            <label class="label">
+              Nombre(s)
+          </label>
+          <input class="inputNormal"  type="text"  name="nombres"  placeholder="Ingrese su nombre" required>
+      
+          <label class="label">
+            Apellidos
+        </label>    
+          <input class="inputNormal" type="text" name="apellido"  placeholder="Ingrese su apellido" required>
+          
+          <label class="label">
+            Nombre de usuario
+        </label>  
+        <input class="inputNormal" type="text" name="username"  placeholder="Ingrese su nombre de usuario" required>
+        
+        <label class="label">
+            Correo Electrónico
+       </label>  
+       <input class="inputNormal" type="text" name="email"  placeholder="Ingrese su correo electrónico" required>
+       
+       <label class="label">
+            Idioma de Notificaciones
+       </label>  
+       <select name="lenguaje" class="lenguaje">
+
+        <option>Español</option>
+        
+        <option>Ingles</option>
+        
+        <option>Frances</option>
+        
+        </select>
+        
+        <label class="label">
+          Zona
+     </label>  
+     <select name="zona" class="zona">
+
+      <option>Mexico</option>
+      
+      <option>EEUU</option>
+      
+      <option>Canada</option>
+      
+      </select>
+    
+      </div>
+      </div>
+           
+    </mat-tab>
+
+    <mat-tab  label="Contraseña">     
+        <div class="divContenedorCont">
+            <div class="divForm">
+              <h3 class="titulo">Cambio contraseña</h3>
+              
+                <label class="label">
+                  Contraseña
+              </label >
+              <input class="inputNormal"  type="text"  name="contraseña"  placeholder="Ingrese su contraseña" required>
+          
+              <label class="label">
+                Nueva Contraseña
+            </label>    
+              <input class="inputNormal" type="text" name="ncont"  placeholder="Ingrese su nueva contraseña" required>
+              
+              <label class="label">
+               Confirme Nueva Contraseña
+            </label>  
+            <input class="inputNormal" type="text" name="ncont2"  placeholder="Confirme su nueva contraseña" required>
+             <button class="btnEnviar">Enviar</button> 
+            </div>
+        </div>  
+    </mat-tab> 
+
+    <mat-tab  label="Suscripción">   
+      <div class="divContenedorCont">
+        <div class="divForm">
+          <h3 class="titulo">Suscripcion</h3>
+          
+            <label>
+           
+          </label>
+          <input class="inputNormal"  type="text"  name="tipoSus"  placeholder="Tipo de Suscripción" required>
+      
+          <label>
+           
+        </label>    
+          <input class="inputNormal" type="text" name="FechaInicio"  placeholder="Fecha de Inicio" required>
+          
+          <label>
+           
+        </label>  
+        <input class="inputNormal" type="text" name="FechaFin"  placeholder="Fecha de Finalización" required>
+        
+        <label>
+          
+       </label>  
+       <input class="inputNormal" type="text" name="Estatus"  placeholder="Estatus" required>
+       
+      
+      </div>
+      </div>
+     
+     
+    </mat-tab>
+
+    <mat-tab  label="Información de pago">     
+      <div class="divContenedorCont">
+        <div class="divForm">
+          <h3 class="titulo">Información de pago</h3>
+          
+            <label>
+           
+          </label>
+          <input class="inputNormal"  type="text"  name="costoSus"  placeholder="Costo de Suscripción" required>
+      
+          <label>
+           
+        </label>    
+          <input class="inputNormal" type="text" name="vencimiento"  placeholder="Vencimiento pago" required>
+          
+          <label>
+           
+        </label>  
+        <input class="inputNormal" type="text" name="FechaPago"  placeholder="Fecha de Pago" required>
+        
+        <label>
+          
+       </label>  
+       <input class="inputNormal" type="text" name="Historial"  placeholder="Historial de Pago" required>
+       
+      
+      </div>
+      </div>
+     
+    </mat-tab>
+
+    <mat-tab  label="Facturación">    
+      <div class="divContenedorCont">
+        <div class="divForm">
+          <h3 class="titulo">Facturación</h3>
+          
+          <label class="label">
+            ¿Requiere Facturación?
+            <select id="selec" [(ngModel)]="seleccion" placeholder="No"> 
+              <option value="Habilitar">Si</option>
+              
+            </select>
+            
+       </label>  
+       
+          <label>
+           
+        </label>    
+          <input class="inputNormal"[(ngModel)]="texto"  [disabled]="!seleccion"type="text" name="rfc" style="text-transform: uppercase;" required minlength="12" maxlength="13" placeholder="RFC" required>
+          <label>
+           
+          </label>    
+            <input class="inputNormal" [(ngModel)]="texto1"[disabled]="!seleccion" type="text" name="Nombre"  placeholder="Nombre Completo ó Razón Social" required>
+            
+          <label>
+           
+        </label>  
+        <input class="inputNormal"[(ngModel)]="texto2" [disabled]="!seleccion" type="text" name="Dirección"  placeholder="Dirección" required>
+        
+        <label>
+           
+        </label>  
+        <input class="inputNormal"[(ngModel)]="texto3" [disabled]="!seleccion" type="number" name="CP"  placeholder="Código Postal"  required minlength="2" maxlength="5" >
+        
+        <label>
+          
+       </label>  
+       <input class="inputNormal"[(ngModel)]="texto4" [disabled]="!seleccion" type="text" name="CorreoFact"  placeholder="Correo Electrónico de Facturación" required>
+       
+       <label>
+          
+       </label>  
+       <input class="inputNormal" [(ngModel)]="texto5" [disabled]="!seleccion" type="text" name="Concept0Fact"  placeholder="Uso de la Factura" required>
+      
+       
+       <button class="btnEnviar" [disabled]="!seleccion">Enviar</button> 
+       <button class="btnCancelar" (click)="limpiar()" type="reset" value="Borrar"[disabled]="!seleccion">Cancelar</button> 
+      </div>
+
+      </div> 
+   
+    </mat-tab>
+</mat-tab-group>
+
+
+  
+
+            
+       
+  
+  
+  
+
+ 

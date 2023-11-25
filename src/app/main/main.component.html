@@ -1,0 +1,200 @@
+<link href="./main.component.css" rel="stylesheet" type="text/css" />
+
+
+<div style="background-color: aqua !important;">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navStatic">
+
+        <div class="divItemNav margin5">
+            <a class="navbar-brand row" href=""><label class="tituloZaio"><b></b></label>
+                <img class="imgLogoFotter" src="../../assets/images/Zaiotec(1).png">
+              
+                </a>    
+        </div>
+        <button (click)="isCollapsed = !isCollapsed" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse divItemNav" id="navbarNav" [ngbCollapse]="isCollapsed">
+            <ul class="navbar-nav ulMenu" id="ulMenu">
+                <li class="nav-item active liItem" id="liMenu">
+                    <a class="navlink" href="/Empresa" style="text-decoration:none">Empresa </a>
+                </li>
+                <li class="nav-item liItem" id="liMenu">
+                    <a class="navlink"  href="/Producto" style="text-decoration:none">Soluciones IoT</a>
+                </li>
+
+                <li class="nav-item liItem" id="liMenu">
+                    <a class="navlink" href="/Contacto" style="text-decoration:none">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</div> 
+
+    <div class="divContenedorPrincipal" (scroll)="onScroll($event)">
+         
+                  <div class="divFondo">
+                    <div class="table-cell__container">
+                        
+                    <h2 class="tituloPrincipal">
+                    Soluciones tecnológicas que transformarán digitalmente tu empresa</h2> 
+                    </div>                               
+                 </div>   
+    
+            <div class="divAliado">
+            <br>
+            <h2 class="tituloAliado">ZaIoTec tu aliado en Soluciones Tecnológicas</h2>
+            <br>
+          
+              <div class="row divRow">
+
+                <div class="divItem4">
+                    <img class="imgItem" src="../../assets/images/focoIdea.png">
+                    <br>
+                    <br>
+                    <h3 class="tituloItem">Soluciones innovadoras</h3>
+
+                    <ul class="ulItem">
+                        Implementamos tu idea de proyecto tecnológico, mediante tecnología de la Industria 4.0 y el Internet de las cosas.
+                    </ul>
+                </div>
+                <div class="divItem4">
+                    <img class="imgItem" src="../../assets/images/engraneIdea.png">
+                    <br>
+                    <br>
+                    <h3 class="tituloItem">Automatización de procesos</h3>
+                    <ul class="ulItem">
+                        Desarrollamos la mejor solución tecnológica que se adapte a las necesidades de tus procesos.    
+                    </ul>
+                </div>
+                <div class="divItem4">
+                    <img class="imgItem" src="../../assets/images/graficoCompa.png">
+                    <br>
+                    <br>
+                    <h3 class="tituloItem">Transformación digital</h3>
+                    <br>
+                    <ul class="ulItem">
+                        Contribuimos a lograr la transformación digital de tu empresa o negocio con la solución tecnológica más adecuada.   
+                    </ul>
+                       
+
+            </div>
+            <div class="divItem4">
+                <img class="imgItem" src="../../assets/images/conectividad.png">
+                <br>
+                <br>
+                <h3 class="tituloItem">Localización y monitoreo</h3>
+                <ul class="ulItem">
+                    Integramos soluciones de localización y monitoreo para flota de vehículos y activos.
+                </ul>
+            </div>
+
+       
+    </div>
+        <div class="divDesarrollo">
+            <br>
+            <h2 class="tituloAliado">Nosotros somos tu solución tecnológica, ofrecemos el desarrollo de:</h2>
+            <br>
+
+
+        <div class="row divRow">
+            
+                    <div class="divItem3">
+                        <img class="imgItem1" src="../../assets/images/desarrolloApps.png">
+                        <br>
+                        <br>
+                        <h3 class="tituloItem">Aplicaciones Móviles</h3>
+
+                    </div>
+                    <div class="divItem3">
+                        <img class="imgItem1" src="../../assets/images/desarrolloWeb.png">
+                        <br>
+                        <br> 
+                        <h3 class="tituloItem">Sitios Web</h3>
+
+                    </div>
+                    <div class="divItem3">
+                        <img class="imgItem1" src="../../assets/images/desarrolloComercio.png">
+                        <br>
+                        <br>
+                        <h3 class="tituloItem">Comercio Electrónico</h3>
+                    </div>
+        </div>
+    </div>
+       
+       
+   <div class="divDesarrollo">
+        <br>
+        <h2 class="tituloAliado">Porque escoger los servicios de ZaIoTec</h2>
+        <br>
+
+
+        <div class="row divRow">
+            <div class="divItem2">
+                <img class="imgItem" src="../../assets/images/vision 1.png">
+                <ul class="ulItem1">
+                    Te apoyamos en encontrar la mejor solución tecnológica para tu empresa
+                </ul>
+
+            </div>
+            <div class="divItem2">
+                <img class="imgItem" src="../../assets/images/Analisis.png">
+                <ul class="ulItem1">
+                    Contribuimos a automatizar tus procesos para mejorar tus indicadores
+                </ul>
+            </div>
+        </div>
+
+        <div class="row divRow">
+            <div class="divItem2">
+                <img class="imgItem" src="../../assets/images/e-commerce.png">
+                <ul class="ulItem1">
+                    Transformamos digitalmente tu empresa, lo que te permitirá tener presencia digital
+                </ul>
+
+            </div>
+            <div class="divItem2">
+                <img class="imgItem" src="../../assets/images/Globle monitor.png">
+                <ul class="ulItem1">
+                    Próximamente contaremos con una plataforma de geolocalización para el rastreo de vehículos, activos y personas
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <br>
+    <div class="Tserv">
+    <h2 class="tituloServicios">Servicios que también podemos ofrecer:</h2>
+    </div>  
+    
+    <div class="divDesarrollo1">
+        <div class="container">
+        <swiper [config]="config" >
+             <ng-template swiperSlide *ngFor="let slide of slides">
+                    <img [src]="slide.image" alt="foto"/>
+                 
+            </ng-template>
+       </swiper>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!--preguntas-->
+    <div class="divPreguntas">
+        <h2 class="pregunta1">¿Cómo te podemos ayudar?</h2>
+        
+        <h2 class="pregunta2">Comunicate con nosotros</h2>
+
+        <h2 class="pregunta3">Con gusto te atenderemos</h2>
+        <br>
+
+    </div>
+    
+    <app-banner-footer></app-banner-footer>
+
+
+</div>

@@ -1,0 +1,99 @@
+
+.app-component{
+
+    width: 100%;
+}
+
+ /******MENU*****/
+
+.mr-2{
+    margin-left: 0%;  
+    font-size: 1%;
+    position: relative;
+    top: 1%;
+    width: 2.5vw;
+}
+
+.menu-box{
+    margin-top: 35vh;
+    height: 53%;
+    background-color:aqua;
+    width: 2.6vw;
+    overflow: hidden;
+}
+
+
+.menu-box:hover{
+    top: 5;
+    height: 60%;
+    width: 3500%;
+    transition: 0.1s;
+}
+
+.menu-items{ 
+    margin-top: 40%;
+    list-style: none;
+    line-height: 50%;
+    padding-left:0%;
+    height: 500;
+}
+
+.menu-items li{ 
+    height: 50%;
+    margin-top: 5%;
+    font-size: 1vw;
+    font-weight: 300%;
+    padding-left: 0%;
+    cursor: pointer;
+    display: flex;
+}
+
+.menu-items li:hover{      
+    background-color:  rgb(255, 255, 255);
+    color:  black;
+    -webkit-box-shadow: 19px 11px 17px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: 19px 11px 17px -11px rgba(0,0,0,0.75);
+box-shadow: 19px 11px 17px -11px rgba(0,0,0,0.75);
+}
+ 
+.onActive{
+    height: 40%;    
+    color: white;
+    background-color: rgba(50, 150, 233, 0.692);
+    -webkit-box-shadow: 19px 11px 17px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: 19px 11px 17px -11px rgba(0,0,0,0.75);
+box-shadow: 19px 11px 17px -11px rgba(0,0,0,0.75);
+}
+
+.onActive:hover{
+    color: white !important;
+    background-color: rgba(50, 150, 233, 0.692) !important;
+}
+
+.menu-items li i{
+    margin-left: 2vw;  
+    font-size: 1.3vw;
+    margin:1.5vw;
+    position: relative;
+    top: 3%;
+    width: 25%;
+}
+
+.tabs{
+    font-size:1.3vw;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-top: 1.7vh ;
+}
+
+.tx{
+    margin-top: 7%;
+    margin-left: 8%;
+    text-decoration: none;
+    color: white;
+}
+.tx:hover{
+    color: rgb(32, 48, 133) !important;
+  
+
+}

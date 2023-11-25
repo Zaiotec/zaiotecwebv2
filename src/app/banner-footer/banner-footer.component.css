@@ -1,0 +1,107 @@
+.divFooter{
+    background-color: rgb(13,199,231);
+    min-width: 100%;
+    max-width: 150%;
+} 
+ 
+.divItemFooter5{
+    color:rgb(0, 0, 77);
+    min-width: 20%;
+    max-width: 20%;
+}
+
+.imgLogoFotter{
+    margin-top: 5%;
+    margin-left: 15%;
+    min-width: 70%;
+    max-width: 70%;
+}
+
+.pFooter{
+    margin-top: 5%;
+    margin-left: 10%;
+    min-width: 70%;
+    max-width: 70%;
+    text-align: left;
+    font-size: 100%;
+}
+
+
+.pFooter1{
+    margin-top: 5%;
+    margin-left: 10%;
+    min-width: 70%;
+    max-width: 70%;
+    text-align: left;
+}
+
+ 
+.labelTituloFooter{
+    margin-top: 7%;
+    text-align: center;
+    min-width: 90%;
+    max-width: 90%;
+    margin-left: 5%;
+   
+}
+
+.labelOpcionFooter{
+    margin-top: 3%;
+    text-align: left;
+    min-width: 90%;
+    max-width: 90%;
+    margin-left: 5%;
+}
+
+
+.iconoLlamadaFooter{
+    min-width: 10%;
+    max-width: 10%;
+}
+
+.labelNumeroFooter{
+    margin-left: 5%;
+    min-width: 80%;
+    max-width: 80%;
+}
+
+.avisoPrivacidadFooter{
+    min-width: 100%;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 20%;
+    cursor: pointer;
+}
+
+.divContenedorRedes{
+    text-align: center;
+    min-width: 100%;
+    max-width: 100%;
+    padding-left: 10%;
+}
+
+
+.iconosRedes{
+    width: 20%;
+}
+
+
+.paraffoJustificado{
+    text-align: justify;
+}
+
+@media (max-width: 770px) {
+    .divItemFooter5{
+        margin-left: 10%;
+        min-width: 80%;
+        max-width: 80%;
+    }
+    .pFooter{
+        margin-top: 5%;
+        margin-left: 5%;
+        min-width: 90%;
+        max-width: 90%;
+        text-align: left;
+    }
+
+}

@@ -1,0 +1,119 @@
+
+/******MENU*****/
+/******MENU*****/
+.barra{
+    min-width: 20%;
+    max-width: 20%;
+
+}
+
+.imgLogoFotter{
+    margin-top: 3.5%;
+    margin-left: 1%;
+    min-width: 5%;
+    max-width: 5%;
+}
+
+.navStatic{
+    position: fixed; /* Set the navbar to fixed position */
+    max-width: 100vw;
+    min-width: 100vw;
+    min-height: 5vh;
+    max-height: 5vh;
+   
+   margin-top: 7 vh !important;
+
+
+}
+
+.divItemNav{
+    font-size: 1vw;
+    min-width: 10%;
+    max-width: 10%;
+}
+
+.margin5{
+    min-height: 10%;
+    min-width: 60%;
+    max-width: 60%;
+    padding-left: .5%;
+    margin-top: -2.3%;
+}
+
+
+
+/*Fin Menu*/
+
+.divForm{
+    min-width: 30%;
+    max-width: 200%;
+    margin-left: 15%;
+    border: hsl(199, 69%, 48%) 1px solid;
+    margin-top: 20%;
+    border-radius: 3%;
+    padding: 1%;
+
+    padding-top: 1%;
+    padding-left: 1%;
+    position: relative;
+    float: left;
+    height: auto;
+}
+
+.T{
+    text-align: center;
+  }
+  .tabla {
+    margin-left: 6%;
+    border: hsl(199, 69%, 48%) 1px solid;
+    margin-top: 5%;
+    border-radius: 3%;
+    padding: 5%;
+
+    padding-top: 1%;
+    padding-left: 1%;
+    position: relative;
+    float: left;
+    height: 85%;
+    width: 90%;
+    }
+
+table {
+    height: 60%;
+    width: 100%;
+    font-size: 2vh;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-left:3%;
+    
+    
+}
+
+thead {
+  
+    border-bottom:  hsl(199, 69%, 48%) 1px solid;
+}
+
+th {
+    text-align: center;
+    padding: 1.3vw ;
+    font-weight: auto;
+    text-transform: uppercase;
+}
+tr{
+    text-align: center;
+}
+
+td {
+    padding: 15px;
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+
+
+tbody tr {
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background: rgba(5, 117, 236, 0.4);
+}

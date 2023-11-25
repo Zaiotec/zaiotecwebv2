@@ -1,0 +1,83 @@
+
+.T{
+    text-align: center;
+  }
+
+
+table {
+
+    width: 100%;
+    font-size: 1vw;
+    table-layout: fixed;
+    border-collapse: collapse;
+    
+    
+}
+
+
+th {
+
+    text-align: left;
+    max-width:  -5vw;
+    height: 3.2vw;
+   
+    text-transform: uppercase;
+}
+tr{
+    height: 2 px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+td {
+    padding: 1.3vw;
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+
+
+tbody tr {
+    cursor: pointer;
+    height: 1%;
+    width: 100%;
+}
+
+
+
+.tabla {
+    margin-left: 20%;
+    border: hsl(199, 69%, 48%) 1px solid;
+    margin-top: 5%;
+    border-radius: 3%;
+    padding: 1%;
+    height: 80%;
+    width: 30%;
+    padding-top: 1%;
+    padding-left: 1%;
+    position: relative;
+    float: left; 
+}
+
+.Dts{
+    margin-left: 100%;
+    text-align: center;
+}
+.tablaP {
+    margin-left: 5%;
+    border: hsl(199, 69%, 48%) 1px solid;
+    margin-top: 5%;
+    border-radius: 3%;
+    padding: 1%;
+    height: 40%;
+    width: 30%;
+    padding-top: 1%;
+    padding-left: 1%;
+    position: relative;
+    float: left; 
+}
+
+.DtsP{
+    margin-left: 100%;
+    text-align: center;
+    font-size: 1.7vh;
+}

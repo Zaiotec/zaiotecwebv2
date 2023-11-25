@@ -1,0 +1,267 @@
+.divContenedorPrincipal{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+/**Nombre**/
+
+
+.Titulod{
+    margin-left: 6%;
+    margin-top: -1%;
+    font-size: 1vw;
+}
+
+.btnR{
+    margin-left: 3%;
+    margin-top: -40%;
+
+}
+
+  /******MENU*****/
+
+/*Submenu*/
+
+.sub{
+    margin-top: 0%;
+}
+/*FinSubmenu*/
+
+.pestañas{
+    margin-top: 5%;
+}
+.T{
+    text-align: center;
+    color: #f5e53c;
+  }
+
+
+table {
+
+    width: 100%;
+    font-size: 1vw;
+    table-layout: fixed;
+    border-collapse: collapse;
+    
+    
+}
+
+
+th {
+
+    text-align: left;
+    max-width:  -5vw;
+    height: 3.2vw;
+    color: white;
+    text-transform: uppercase;
+}
+tr{
+    height: 2 px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+td {
+    padding: 1.3vw;
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+
+
+tbody tr {
+    cursor: pointer;
+    height: 1%;
+    width: 100%;
+}
+
+
+
+.tabla {
+    margin-left: 35%;
+    border: hsl(199, 69%, 48%) 1px solid;
+    margin-top: 3%;
+    border-radius: 3%;
+    padding: 1%;
+    height: 90%;
+    width: 30%;
+    padding-top: 1%;
+    padding-left: 1%;
+    position: relative;
+    float: left;
+    background-color: #3282b8;
+
+  
+}
+.barra2{
+    margin-top: 1%;
+}
+
+/*Menu2*/
+
+
+
+.Dts{
+    margin-left: 100%;
+    text-align: center;
+    color: white;
+}
+.Hrs{
+    margin-top: 5%;
+}
+
+.tabla3 {
+    margin-right: 5%;
+    margin-left: 5%;
+    border: hsl(199, 69%, 48%) 1px solid;
+    margin-top: 3%;
+    border-radius: 3%;
+    padding-top: 1%;    
+    position: relative;
+    float: left;
+    height: auto;
+    background-color: #3282b8;
+}
+
+.T3{
+    
+    font-size: 1vw;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-left: 1%;
+}
+
+/*****DAtos Localizacion*/
+
+
+label{
+    margin-top: 3%;
+    min-width: 100%;
+}
+
+.divForm{
+
+    min-width: 40%;
+    max-width: 40%;
+    margin-left: 3%;
+    border: hsl(199, 69%, 48%) 1px solid;
+    margin-top: 1%;
+    border-radius: 3%;
+    padding: 1%;
+    background-color: #3282b8;
+    padding-top: 1%;
+    padding-left: 1%;
+    position:relative ;
+    float: left;
+    height: auto;
+
+
+}
+
+.tx{
+    font-size: 1vw;
+    text-align: center;
+}
+
+
+
+.divFormMapa{
+
+    min-width: 40%;
+    max-width: 40%;  
+    margin-left: 50%;
+    border: hsl(199, 69%, 48%) 1px solid;
+    margin-top: -4.6%;
+    border-radius: 1%;
+    padding-top:1%;
+  
+    position: relative;
+    float: left;
+    height: auto;
+}
+
+.inputNormal{
+    margin-left: 30%;
+    text-align: center;
+    min-width: 30%;
+    max-width: 30%;
+    border-color: #269bd1;
+    border-radius: 10%;
+    font-size:1vw;
+}
+.TM{
+    text-align: center;
+   
+}
+
+/**Configuracion*/
+
+.tablaC {
+    margin-left: 35%;
+    border: hsl(199, 69%, 48%) 1px solid;
+    margin-top: 0%;
+    border-radius: 3%;
+    padding: 1%;
+    height: 100%;
+    width: 30%;
+    padding-top: 1%;
+    padding-left: 1%;
+    position: relative;
+    float: left;
+    background-color: #3282b8;
+}
+
+.Pts{
+    margin-left: 100%;
+    text-align: center;
+}
+
+ /******MENU*****/
+ .barra{
+
+    min-width: 20%;
+    max-width: 20%; 
+
+}
+
+.imgLogoFotter{
+    margin-top: 3.5%;
+    margin-left: 1%;
+    min-width: 5%;
+    max-width: 5%;
+}
+
+.navStatic{
+    position: absolute; /* Set the navbar to fixed position */
+    max-width: 100vw;
+    min-width: 100vw;
+    min-height: 5vh;
+    max-height: 5vh;
+    
+
+
+}
+
+.divItemNav{
+    font-size: 1vw;
+    min-width: 10%;
+    max-width: 10%;
+}
+
+.margin5{
+    min-height: 10%;
+    min-width: 60%;
+    max-width: 60%;
+    padding-left: .5%;
+    margin-top: 1%;
+}
+
+
+.button{
+    background-color: #007bff;
+    border-radius: 2%; 
+    color: white; 
+    font-size:1.3vh;
+    cursor: pointer; 
+    
+}
+

@@ -1,0 +1,42 @@
+
+<div style="position: fixed;"><app-menu></app-menu></div>
+
+<div style="position: fixed;"><app-submenu></app-submenu></div>
+
+
+
+
+
+  
+
+     
+  <div class="tabla">
+  
+    <h2 class="T" >Lista de Dispositivos  </h2>
+    <table>
+        <thead>
+            <tr class="txT">
+                <th>Nombre</th>
+                <th>Identificador</th>
+                <th>Red</th>
+                <th>Tipo</th>
+                <th>Batería</th>
+                <th>Ultima Actividad</th>
+                <th>Ver detalles</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="tx" *ngFor="let dis of arrayDispositivos;index as i" >
+                <td >{{dis.nombreDispositivo}}</td>
+                <td>{{dis.identificadorDispositivos}}</td>
+                <td>{{dis.redDispositivos}}</td>
+                <td>{{dis.tipoDispositivo}}</td>
+                <td>{{dis.bateriaDispositivo}}</td>
+                <td>{{dis.ultimaactividadDispositivos}}</td>
+                <td><button (click)="detallesDispositivo(i)" class="btnVer">Ver</button> </td>
+            </tr>       
+       
+        </tbody>
+    </table>
+</div>
+<router-outlet> </router-outlet>

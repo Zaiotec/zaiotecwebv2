@@ -1,0 +1,213 @@
+
+.divContenedorPrincipal{
+
+    min-width: 100%;
+    max-width: 100%;
+}
+/****barra***/
+
+
+    /******MENU*****/
+    .barra{
+        min-width: 20%;
+        max-width: 20%; 
+
+    }
+
+    .imgLogoFotter{
+        margin-top: 3.5%;
+        margin-left: 1%;
+        min-width: 5%;
+        max-width: 5%;
+    }
+
+    .navStatic{
+        position: fixed; /* Set the navbar to fixed position */
+        max-width: 100vw;
+        min-width: 100vw;
+        min-height: 5vh;
+        max-height: 5vh;
+    
+    margin-top: 7 vh !important;
+
+
+    }
+
+    .divItemNav{
+        font-size: 1vw;
+        min-width: 10%;
+        max-width: 10%;
+    }
+
+    .margin5{
+        min-height: 10%;
+        min-width: 60%;
+        max-width: 60%;
+        padding-left: .5%;
+        margin-top: -2.3%;
+    }
+
+
+
+
+/*Fin Menu*/
+
+
+
+
+.tab{
+    margin-left: 25%;
+    margin-top: 8vh;
+
+}
+.divContenedorTablero2{
+    margin-top: 10px;
+    overflow-x: hidden;
+    min-width: 100%;
+    max-width: 100%;
+
+}
+
+label{
+    margin-top: 3%;
+    min-width: 100%;
+}
+
+.divForm{
+
+    min-width: 30%;
+    max-width: 40%;
+    margin-left: 20%;
+    border: hsl(199, 69%, 48%) 1px solid;
+    margin-top: 1%;
+    border-radius: 3%;
+    padding: 1%;
+
+    padding-top: 1%;
+    padding-left: 1%;
+    position:relative ;
+    float: left;
+    height: auto;
+
+
+}
+
+.tx{
+    font-size: 1vw;
+    text-align: center;
+}
+
+
+
+.divForm2{
+
+    min-width: 20%;
+    max-width: 40%;  
+    margin-left: 60%;
+    border: hsl(199, 69%, 48%) 1px solid;
+    margin-top: -10.5%;
+    border-radius: 1%;
+    padding-top:1%;
+  
+    position: relative;
+    float: left;
+    height: auto;
+}
+
+
+.inputNormal{
+    margin-left: 30%;
+    text-align: center;
+    min-width: 30%;
+    max-width: 30%;
+    border-color: #269bd1;
+    border-radius: 10%;
+    font-size:1vw;
+}
+
+
+
+
+
+
+ .T{
+   text-align: center;
+ }
+
+ 
+ 
+
+  .tabla {
+    margin-left: 15%;
+    border: hsl(199, 69%, 48%) 1px solid;
+    margin-top: 37%;
+    border-radius: 3%;
+    padding: 1%;
+
+    padding-top: 1%;
+    padding-left: 1%;
+    position: relative;
+    float: left;
+    height: auto;
+}
+
+table {
+  
+    font-size: 1vw;
+    table-layout: fixed;
+    border-collapse: collapse;
+    
+    
+}
+
+thead {
+  
+    border-bottom:  hsl(199, 69%, 48%) 1px solid;
+}
+
+th {
+    text-align: center;
+    padding: 1% 2%;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: .5%;
+}
+tr{
+    text-align: center;
+}
+
+td {
+    padding: 4%;
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
+
+
+tbody tr {
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background: rgba(5, 117, 236, 0.4);
+}
+
+/**Mapa**/
+.map-wrap {
+    position: absolute;
+    width: 80%;
+    height: 60%;
+  }
+  
+  .map {
+    margin-top:3%;
+    position: absolute;
+    width: 95%;
+    height: 70%;
+    margin-left:3%;
+  }
+  
+  .watermark {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 999;
+  }

@@ -1,0 +1,18 @@
+.divFormMapa{
+
+    min-width: 40%;
+    max-width: 40%;  
+    margin-left: 30%;
+    border: hsl(199, 69%, 48%) 1px solid;
+    margin-top: 5%;
+    border-radius: 1%;
+    padding-top:1%;
+  
+    position: relative;
+    float: left;
+    height: auto;
+}
+
+.TM{
+    margin-left: 33%;
+}

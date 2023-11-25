@@ -1,0 +1,82 @@
+<div style="background-color: aqua !important;">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navStatic">
+
+        <div class="divItemNav margin5">
+            <a class="navbar-brand row" href=""><label class="tituloZaio"><b></b></label>
+                <img class="imgLogoFotter" src="../../assets/images/Zaiotec(1).png">
+              
+                </a>    
+        </div>
+        <button (click)="isCollapsed = !isCollapsed" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse divItemNav" id="navbarNav" [ngbCollapse]="isCollapsed">
+            <ul class="navbar-nav ulMenu" id="ulMenu">
+                <li class="nav-item active liItem" id="liMenu">
+                    <a class="navlink1" href="" style="text-decoration:none">Empresa </a>
+                </li>
+                <li class="nav-item liItem" id="liMenu">
+                    <a class="navlink"  href="/Productos" style="text-decoration:none">Soluciones IoT</a>
+                </li>
+
+                <li class="nav-item liItem" id="liMenu">
+                    <a class="navlink" href="/Contacto" style="text-decoration:none">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</div>
+
+<div class="divContenedorEmpresa">
+    <h2 class="h2Titulo">¿Quiénes somos?</h2>
+    <p class="pTitulo">Zaiotec es el socio tecnológico de toda PYME mexicana, ofrece soluciones innovadoras de servicios de tecnología, de localización y monitoreo, que ayudará a transformar digitalmente tu empresa, mediante el desarrollo de soluciones tecnológicas que permitan automatizar tus procesos.</p>
+    <h2 class="h2Titulo">Nuestra Misión - Visión - Valores</h2>
+    
+    <div class="row divContenedorMisionVision">
+        <div class="itemnMV">
+            <h2 class="divTituloMV">Misión</h2>
+            <img class="imgVM" src="../../assets/images/mision.png">
+            <p class="pMV">Ofrecer soluciones innovadoras de servicios de tecnología, de  localización y monitoreo, que satisfagan las necesidades de nuestros clientes y transformen digitalmente su empresa.</p>
+
+        </div>
+        <div class="itemnMV">
+            <h2 class="divTituloMV">Visión</h2>
+            <img class="imgVM" src="../../assets/images/vision.png">
+            <p class="pMV">Ser el socio tecnológico de toda PYME mexicana ubicada en cualquier parte del país, que demande el desarrollo de soluciones tecnológicas, de  localización y monitoreo, contribuyendo así a su transformación digital.</p>
+        </div>
+    </div>
+
+ 
+    <h2 class="divTituloMVTitulo">Valores</h2>
+
+    <div class="divCOntenedorValores row">
+        <div class="itemValores">
+            <label class="labelValoresIzq">Confianza</label>
+            <label class="labelValoresIzq">Productividad
+            </label>
+            <label class="labelValoresIzq">Trabajo en equipo
+            </label>
+            <label class="labelValoresIzq">Servicio</label>
+
+        </div>
+        <div class="itemValores">
+            <img class="imgValores" src="../../assets/images/valores.png">
+        </div>
+        <div class="itemValores">
+            <label class="labelValoresDer">Integridad</label>
+            <label class="labelValoresDer">Efectividad</label>
+            <label class="labelValoresDer">Lealtad
+            </label>
+            <label class="labelValoresDer">Calidad</label>
+
+        </div>
+   
+
+    </div>
+    <br>
+    <br>
+    <app-banner-footer></app-banner-footer>
+</div>

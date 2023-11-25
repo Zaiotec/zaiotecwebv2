@@ -1,0 +1,31 @@
+
+
+<div style="position: absolute"><app-submenu></app-submenu></div>
+<section class="app-component">
+    <div class="row">
+        <div class="col-lg-2">
+            <div class="menu-box">
+                <div class="side-menu-list">
+                     <ul class="menu-items">
+                        <li (click)="goTo('Home')" [ngClass]="{'onActive':selectedMenu=='Home'}"><img class="mr-2" src="../../assets/images/Tablero.png"><a class="tx" routerLink="/Inicio">Tablero</a></li>
+                       <br>
+                        <li (click)="goTo('Dispositivos')"[ngClass]="{'onActive':selectedMenu=='Dispositivos'}"><img class="mr-2" src="../../assets/images/Dispositivos.png"><a class="tx" routerLink="/Dispositivos"> Dispositivos</a></li>
+                       <br>
+                        <li (click)="goTo('Notificaciones')"[ngClass]="{'onActive':selectedMenu=='Notificaciones'}"><img class="mr-2" src="../../assets/images/Notificaciones.png"><a class="tx" routerLink="/Notificaciones">Notificaciones</a></li>
+                        <br>
+                        <li (click)="goTo('Geocercas')"[ngClass]="{'onActive':selectedMenu=='Geocercas'}"><img class="mr-2" src="../../assets/images/Geocercas.png"><a class="tx" routerLink="/Geocercas">Geocercas</a></li>
+                        <br>
+                        <li (click)="goTo('Configuracion')"[ngClass]="{'onActive':selectedMenu=='Configuracion'}"><img class="mr-2" src="../../assets/images/Configuracion.png"><a class="tx" routerLink="/Configuracion">Configuracion</a></li>
+                        <br>
+                        <li (click)="goTo('Usuario')"[ngClass]="{'onActive':selectedMenu=='Usuario'}"><img class="mr-2" src="../../assets/images/Usuario.png"><a  class="tx" routerLink="/Usuario">Usuario</a></li>
+                    </ul>
+                </div> 
+            </div>
+        </div>
+
+     
+              
+
+    </div>
+</section>
+
