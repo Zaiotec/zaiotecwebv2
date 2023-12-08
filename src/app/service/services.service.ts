@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
 import { CookieService } from 'ngx-cookie-service';
@@ -12,7 +12,7 @@ export class ServicesService {
 private secretKey: string = 'wnyZDRanmi'; 
 urlBase="https://t1d5znexu9.execute-api.us-east-1.amazonaws.com/desarrollo";
 nombreGalleta = "sessionZaioTec";  
-
+private apiUrl = 'https://tu-api-url.com';//url
 constructor(private http: HttpClient,private cookieService: CookieService) { }
 
 
@@ -63,6 +63,17 @@ constructor(private http: HttpClient,private cookieService: CookieService) { }
     const decrypted = CryptoJS.AES.decrypt(ciphertext, this.secretKey);
     return decrypted.toString(CryptoJS.enc.Utf8);
   }
+
+   agregarGeocerca(geocercaData: any): Observable<any> {
+    const url = "arn:aws:geo:us-east-1:978161600042:geofence-collection/EjemploGeocercas";
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+    return this.http.post(url, geocercaData, { headers });
+  }
+
+
+
 }
 
 

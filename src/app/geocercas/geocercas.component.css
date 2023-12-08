@@ -16,3 +16,48 @@
 .TM{
     margin-left: 33%;
 }
+
+.mapa{
+  height: 80%;
+}
+.map-wrap {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+  }
+  
+  .map {
+    margin-top:3%;
+    position: absolute;
+    width: 95%;
+    height: 850%;
+    margin-left:3%;
+  }
+  
+  .watermark {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    z-index: 999;
+  }
+
+
+
+
+  .mapboxgl-ctrl-group:not(:empty) {
+    box-shadow: 0 0 0 2px rgba(0,0,0,.1);
+}
+
+.mapboxgl-ctrl-top-right .mapboxgl-ctrl {
+    float: right;
+    margin: 10px 10px 0 0;
+}
+.mapboxgl-ctrl-group {
+    background: #fff;
+    border-radius: 4px;
+}
+.mapboxgl-ctrl {
+    clear: both;
+    pointer-events: auto;
+    transform: translate(0);
+}
