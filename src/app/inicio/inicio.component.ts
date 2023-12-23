@@ -49,8 +49,8 @@ private mapContainer!: ElementRef<HTMLElement>;
   }
 
   ngAfterViewInit() {
-    const initialState = { lng: 139.753, lat: 35.6844, zoom: 14 };
-    const apiKey = "arn:aws:geo:us-east-1:978161600042:api-key/Mp1";
+    const initialState = { lng: -99.472338, lat: 19.334577, zoom: 14 };
+    const apiKey = "v1.public.eyJqdGkiOiJjZjE2NmYwNi00NWQ3LTQ2NWItOWQ2Ni03OWY2ZTRjMWJhMDYifZXaCXBtFgKZLKdrmmDQyvGtKw-wqlxm6VDPZx-zgXE-a3Ovq0eYvPfWYQtKoB67KOS-pBiCektnWh_g2y6wmXUFr631IOwJnHl5pIOOsrjR8ei42ltamIvFhY_nRtqN3bScC_gCAWOjYkaTA3sZNUmjPlp4NlGC1ZXUYClQtVv7IcyofLrQ9qwSmwsTPRulqwtb__0Lk5dbSCg82cRhsrCd_8DOIAnJtsRYCb34qRX3vVOAyzdLjO9CIKLQVGYsNt7rMjZZPIimMiH_obuRytLnSEM6MSD2k5H_9c2yIh1_Ke4H_mIZFnpbMM351_ksStvJw2og3gj634ciYjiWi5M.ZWU0ZWIzMTktMWRhNi00Mzg0LTllMzYtNzlmMDU3MjRmYTkx";
     const mapName = "Mapa_1";
       const region = "us-east-1";
     this.map = new Map({ 
@@ -62,8 +62,13 @@ private mapContainer!: ElementRef<HTMLElement>;
 
     this.map.addControl(new NavigationControl(), 'top-right');
     new Marker({color: "#FF0000"})
-      .setLngLat([139.7525,35.6846])
+      .setLngLat([-99.472338,19.334577])//19.334577, -99.472338
       .addTo(this.map);
+      new Marker({color: "#FF0000"})
+      .setLngLat([-99.67656967153866 , 19.28300303100438])//19.28300303100438, -99.67656967153866
+      .addTo(this.map);
+
+
   
   }
   ngOnDestroy(): void {
