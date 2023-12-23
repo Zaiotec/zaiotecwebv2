@@ -1,10 +1,18 @@
 import { Component,OnInit,ViewChild, ElementRef, AfterViewInit, OnDestroy, Inject  } from '@angular/core';
-import { Map, Marker, NavigationControl } from 'maplibre-gl';  
+import {  NavigationControl } from 'maplibre-gl';  
 import * as mapboxgl from 'maplibre-gl';
 import * as MapboxDraw from '@mapbox/mapbox-gl-draw';
-
+import { AmplifyGeofenceControl} from 'maplibre-gl-js-amplify';
 import { ServicesService } from '../service/services.service';
-
+import { Amplify } from 'aws-amplify';
+//import amplifyconfig from './amplifyconfiguration.json';
+//Amplify.configure(amplifyconfig);
+import { drawPoints } from 'maplibre-gl-js-amplify';
+import { withAuthenticator } from "@aws-amplify/ui-react";
+import "@aws-amplify/ui-react/styles.css";
+import "maplibre-gl-js-amplify/dist/public/amplify-ctrl-geofence.css";
+import "maplibre-gl/dist/maplibre-gl.css";
+import { createMap } from "maplibre-gl-js-amplify";
 
 @Component({
   selector: 'app-geocercas',
@@ -26,11 +34,11 @@ export class GeocercasComponent implements OnInit {
 
 
 
-  map: Map | undefined;
+  //map: Map | undefined;
   @ViewChild('map')
 private mapContainer!: ElementRef<HTMLElement>;
 ngOnInit()  {
-
+  this.iniciarMapa();
   /*const location = this.amplifyService.api().get('location');
   const geofenceData = {
     FenceName: 'MiGeocerca',
@@ -55,6 +63,16 @@ ngOnInit()  {
     });*/
 }
 
+async iniciarMapa(){
+  var map = await createMap({
+    container: 'map',
+    center: [-122.431297, 37.773972],
+    zoom: 11,
+  });
+  //const control = new AmplifyGeofenceControl();
+  //map.addControl(control);
+
+}
 
 
 ngAfterViewInit() {
@@ -64,16 +82,22 @@ ngAfterViewInit() {
     const region = "us-east-1";
 
 
+ 
+/*
   this.map = new Map({ 
     container: this.mapContainer.nativeElement,
     style: "https://maps.geo."+region+".amazonaws.com/maps/v0/maps/"+mapName+"/style-descriptor?key="+apiKey,
     center: [initialState.lng, initialState.lat],
     zoom: initialState.zoom
-  }); 
-  this.marker = new mapboxgl.Marker()
+  }); */
+
+//this.map.addControl();
+
+
+  /*this.marker = new mapboxgl.Marker()
       .setLngLat([-99.46879,19.22473])
       .addTo(this.map);
-    this.map.addControl(new NavigationControl(), 'top-right');
+    this.map.addControl(new NavigationControl(), 'top-right');*/
 
 
 
