@@ -47,7 +47,7 @@ private mapContainer!: ElementRef<HTMLElement>;
 
   ngOnInit(): void {
   }
-
+  
   ngAfterViewInit() {
     const initialState = { lng: -99.472338, lat: 19.334577, zoom: 14 };
     const apiKey = "v1.public.eyJqdGkiOiJjZjE2NmYwNi00NWQ3LTQ2NWItOWQ2Ni03OWY2ZTRjMWJhMDYifZXaCXBtFgKZLKdrmmDQyvGtKw-wqlxm6VDPZx-zgXE-a3Ovq0eYvPfWYQtKoB67KOS-pBiCektnWh_g2y6wmXUFr631IOwJnHl5pIOOsrjR8ei42ltamIvFhY_nRtqN3bScC_gCAWOjYkaTA3sZNUmjPlp4NlGC1ZXUYClQtVv7IcyofLrQ9qwSmwsTPRulqwtb__0Lk5dbSCg82cRhsrCd_8DOIAnJtsRYCb34qRX3vVOAyzdLjO9CIKLQVGYsNt7rMjZZPIimMiH_obuRytLnSEM6MSD2k5H_9c2yIh1_Ke4H_mIZFnpbMM351_ksStvJw2og3gj634ciYjiWi5M.ZWU0ZWIzMTktMWRhNi00Mzg0LTllMzYtNzlmMDU3MjRmYTkx";
