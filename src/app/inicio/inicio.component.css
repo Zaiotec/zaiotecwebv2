@@ -1,6 +1,9 @@
 
-.divContenedorPrincipal{
 
+
+
+.divContenedorPrincipal{
+   
     min-width: 100%;
     max-width: 100%;
 }
@@ -198,6 +201,7 @@ tbody tr:hover {
   }
   
   .map {
+    z-index: -100;
     margin-top:3%;
     position: absolute;
     width: 95%;

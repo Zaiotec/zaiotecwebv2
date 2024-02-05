@@ -1,7 +1,10 @@
 
 .app-component{
-
-    width: 100%;
+ 
+   
+    width: auto;
+    min-width: 2.6vw;
+    position: static;
 }
 
  /******MENU*****/
@@ -11,26 +14,32 @@
     font-size: 1%;
     position: relative;
     top: 1%;
-    width: 2.5vw;
+    width: 4.2vh;
+
 }
 
 .menu-box{
-    margin-top: 35vh;
-    height: 53%;
+    
+    margin-top: 30vh;
+    height: 40vh;
     background-color:aqua;
-    width: 2.6vw;
+    width: 4vh;
+    min-width: 4vh ;
     overflow: hidden;
 }
 
 
 .menu-box:hover{
-    top: 5;
-    height: 60%;
-    width: 3500%;
+    
+    height: 50vh;
+    width: 10vw;
+    max-width: 10vw;
+    min-width: 10vw;
     transition: 0.1s;
 }
 
 .menu-items{ 
+
     margin-top: 40%;
     list-style: none;
     line-height: 50%;
@@ -64,11 +73,11 @@ box-shadow: 19px 11px 17px -11px rgba(0,0,0,0.75);
 -moz-box-shadow: 19px 11px 17px -11px rgba(0,0,0,0.75);
 box-shadow: 19px 11px 17px -11px rgba(0,0,0,0.75);
 }
-
+/*
 .onActive:hover{
     color: white !important;
     background-color: rgba(50, 150, 233, 0.692) !important;
-}
+}*/
 
 .menu-items li i{
     margin-left: 2vw;  
